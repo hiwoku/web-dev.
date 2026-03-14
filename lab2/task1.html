@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>facebook</title>
+    <style>
+        body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 450px;
+    gap: 80px;
+}
+
+
+.logo {
+    color: #1877f2;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.text {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.box {
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.box button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+
+}
+
+.login-btn {
+    color: #fff;
+    background-color: #1877f2;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+.forgot-btn {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-btn:hover,
+.forgot-btn:active {
+    text-decoration: underline;
+}
+
+
+.register-btn {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 250px;
+    color: #fff;
+    background-color: rgb(20, 196, 20);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.box a {
+    display: block;
+    margin-top: 10px;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.create-pg {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.create-pg a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+
+}
+
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #737373;
+    background: #fff;
+    padding: 25px 0;
+    width: 100%;
+}
+
+
+.footer-container {
+    width: 980px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #737373;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.languages,
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #737373;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="left">
+                <h1 class="logo">facebook</h1>
+                <p class="text">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+            </div>
+
+            <div class="right">
+                <div class="box">
+                    <form>
+                        <input type="email" class="input" placeholder="Электронный адрес или номер телефона">
+                        <input type="password" class="input" placeholder="Пароль">
+                        <button type="button" class="login-btn" >Вход</button>
+
+                        <a href="https://ru-ru.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+                            class="forgot-btn">Забыли пароль?</a>
+                        <hr>
+                        <a href="https://ru-ru.facebook.com/r.php?entry_point=login"><button type="button"
+                                class="register-btn">Создать новый аккаунт</button></a>
+                    </form>
+                </div>
+                <p class="create-pg">
+                    <a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Создать Страницу</a>
+                    знаменитости, музыкальной группы или компании.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="languages">
+                <a href="#">Русский</a>
+                <a href="#">Қазақша</a>
+                <a href="#">English (US)</a>
+                <a href="#">Türkçe</a>
+                <a href="#">Bahasa Indonesia</a>
+                <a href="#">中文(简体)</a>
+                <a href="#">Deutsch</a>
+                <a href="#">한국어</a>
+                <a href="#">Shqip</a>
+                <a href="#">Español</a>
+                <a href="#">Português (Brasil)</a>
+            </div>
+
+            <hr>
+            <div class="links">
+                <a href="https://www.facebook.com/reg">Зарегистрироваться</a>
+                <a href="https://www.facebook.com/login/">Вход</a>
+                <a href="https://www.messenger.com/">Messenger</a>
+                <a href="https://www.facebook.com/lite/">Facebook Lite</a>
+                <a href="https://www.facebook.com/watch/">Видео</a>
+                <a href="https://www.meta.com/meta-pay/?utm_source=about.meta.com&utm_medium=redirect">Meta Pay</a>
+                <a href="https://www.meta.com/">Магазин Meta</a>
+                <a href="https://www.meta.com/quest/">Meta Quest</a>
+                <a href="https://www.meta.com/ai-glasses/?utm_source=www.facebook.com&utm_medium=organicsearch">Rey-Ban
+                    Meta</a>
+                <a href="https://www.meta.ai/">Meta AI</a>
+                <a
+                    href="https://www.meta.ai/pages/ipad-release-features-processor-display-camera-upgrades/?utm_source=foa_web_footer">Больше
+                    контента от Meta AI</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.threads.com/">Threads</a>
+                <a href="https://www.facebook.com/search/top/?q=vote">Центр информации о выборах</a>
+                <a href="https://www.facebook.com/privacy/policy/?entry_point=facebook_page_footer">Политика
+                    конфиденциальности</a>
+                <a href="https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer">Центр
+                    конфиденциальности</a>
+                <a href="https://www.meta.com/about/?utm_source=about.meta.com&utm_medium=redirect">Информация</a>
+                <a
+                    href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fcreate%2F%3Fnav_source%3Dunknown%26campaign_id%3D402047449186%26placement%3Dpflo%26extra_1%3Dnot-admgr-user&campaign_id=402047449186">Создать
+                    рекламу</a>
+                <a href="https://www.facebook.com/pages/create/?ref_type=site_footer">Создать Страницу</a>
+                <a href="https://developers.facebook.com/?ref=pf">Разработчикам</a>
+                <a href="https://www.metacareers.com/">Вакансии</a>
+                <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0">Файлы
+                    cookie</a>
+                <a href="https://www.facebook.com/help/568137493302217">Рекламные предпочтения</a>
+                <a href="https://www.facebook.com/policies_center/">Условия использования</a>
+                <a href="https://www.facebook.com/help/?ref=pf">Справка</a>
+                <a href="https://www.facebook.com/help/637205020878504">Загрузка контактов и лица, не являющиеся
+                    пользователями</a>
+            </div>
+
+            <p>Meta © 2026</p>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

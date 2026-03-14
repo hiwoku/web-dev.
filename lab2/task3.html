@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GitHub</title>
+    <style>
+        logo {
+    width: 39px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.text {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.smalltext {
+    font-family: DM sans, sans-serif;
+    font-size: 18px;
+    margin-right: 160px;
+    margin-left: 160px;
+    text-align: center;
+    color: #5e5e5e;
+}
+
+.forfree-btn {
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to top, #1c1a1a, #434343);
+    transition: 0.3s;
+}
+
+.forfree-btn:hover {
+    background: linear-gradient(to top, #272424, #656565);
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 80px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    padding: 20px 20px 0 20px;
+    box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.card h2 {
+    font-family: DM sans, sans-serif;
+    text-align: center;
+
+
+}
+
+.txt p {
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    width: 250px;
+    text-align: center;
+    color: #656565;
+    margin-left: 70px;
+}
+
+
+.prices {
+    font-family: DM sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+
+.currency {
+    font-size: 20px;
+    color: #5e5e5e;
+}
+
+.amount {
+    font-size: 55px;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.period {
+    margin-left: 60px;
+    font-size: 18px;
+    color: #5e5e5e;
+
+}
+
+.usd {
+    font-size: 20px;
+}
+
+.price {
+    font-family: DM sans, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+
+.join-btn {
+    margin-left: 50px;
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    padding: 12px;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    width: 300px;
+    transition: 1.25px;
+}
+
+.join-btn:hover {
+    border: 1px solid #000;
+}
+
+.continue-btn {
+    margin-left: 50px;
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    background: linear-gradient(to top, #1c1a1a, #434343);
+    color: #fff;
+    font-weight: 800;
+    width: 300px;
+    transition: 1.25px;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(to top, #272424, #656565);
+}
+
+.btn{
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #656565;
+    border: 1px solid #bcbcbc;
+    width: 110px;
+    margin-left: 145px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    gap: 20px;
+}
+
+.start-btn {
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    padding: 12px;
+    background: linear-gradient(to top, #1c1a1a, #434343);
+    width: 150px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.start-btn:hover {
+    background: linear-gradient(to top, #272424, #656565);
+}
+
+
+.contact-btn {
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    padding: 12px;
+    background-color: #fff;
+    width: 150px;
+    font-weight: 700;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    border: 1px solid #000;
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f2f2;
+    font-family: DM sans, sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    flex-grow: 1;
+
+}
+.accordion details {
+    padding: 10px 0;
+}
+
+.accordion summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #57606a;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::before {
+    content: ">";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+}
+
+.accordion details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.accordion p {
+    margin: 8px 0 0 16px;
+    color: #57606a;
+    font-size: 15px;
+    width: 350px;
+}
+
+.featured {
+    color: #0969da;
+    font-weight: 800;
+}
+
+.everything {
+    color: #000;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#c{
+    border: 5px solid #0969da;
+}
+
+
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+}
+
+.container {
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(-150px);
+}
+
+.words {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "DM sans", sans-serif;
+}
+
+.note {
+    font-family: "DM sans", sans-serif;
+    font-family: 19px;
+
+    color: #656565;
+
+}
+
+.click {
+    font-family: "DM sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.log {
+    width: 50px;
+    height: auto;
+}
+
+.text2 h1 {
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+}
+    </style>
+
+
+</head>
+
+
+<body>
+    <header>
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt="gitLogo">
+    </header>
+    <section class="hero">
+        <h1 class="text">Try the Copilot-powered platform</h1>
+        <p class="smalltext">We get it, there's a lot you can do with GitHub. That’s why we've packed all of it into a
+            single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</p>
+        <button class="forfree-btn">Start for free 30 days</button>
+    </section>
+
+
+    <section class="cards">
+
+        <div class="card">
+            <h2>Free</h2>
+            <div class="txt">
+                <p>The basics for individuals
+                    and organizations</p>
+            </div>
+            <div class="prices">
+                <span class="currency">$</span>
+                <span class="amount">0</span>
+                <div class="price-info">
+                    <span class="period">per user/month</span>
+                    <span class="usd">USD</span>
+
+                </div>
+            </div>
+
+            <button class="join-btn">Join for free</button>
+            <div class="accordion">
+                <details>
+                    <summary>Unlimited public/private repositories</summary>
+                    <p> Host open source projects in public GitHub repositories,
+                        accessible via web or command line.</p>
+                </details>
+
+                <details>
+                    <summary>Dependabot security and version updates</summary>
+                    <p>Keep projects secure by automatically opening pull requests to update vulnerable dependencies and
+                        keep them up to date.</p>
+                </details>
+
+                <details>
+
+                    <summary>2000 CI/CD minutes/month
+                    </summary>
+                    <p>Use execution minutes with GitHub Actions to automate your software development workflows.
+                        Write tasks and combine them to build, test, and deploy any code project on GitHub.</p>
+                </details>
+
+                <details>
+                    <summary>Issues & Projects</summary>
+                    <p>Give your developers flexible features for project management that adapts to any team, project,
+                        and workflow — all alongside your code.</p>
+                </details>
+
+                <details>
+                    <summary>Cominuty support</summary>
+                    <p>Get help with most of your GitHub questions and issues in our Community Forum.</p>
+                </details>
+                <h4 class="featured">FEATURED ADD-ONS</h4>
+                <details>
+                    <summary>GitHub Copilot Access</summary>
+                    <p>With <a href="https://github.com/features/copilot">GitHub Copilot</a>, get suggestions for whole
+                        lines or entire functions—right inside your
+                        editor.</p>
+                </details>
+                <details>
+                    <summary>GitHub Codespaces Access</summary>
+                    <p>With <a href="https://github.com/features/codespaces">GitHub Codespaces</a>, get an instant dev
+                        environment in the cloud, so you can code anywhere on any device.</p>
+                </details>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Team</h2>
+            <div class="txt">
+                <p>Advanced collaboration for
+                    individuals and organizations</p>
+            </div>
+            <div class="prices">
+                <span class="currency">$</span>
+                <span class="amount">4</span>
+                <div class="price-info">
+                    <span class="period">per user/month</span>
+                    <span class="usd">USD</span>
+
+                </div>
+            </div>
+            <button class="continue-btn">Continue with Team</button>
+
+            <div class="accordion">
+                <h4 class="everything">← Everything included in Free, plus...</h4>
+
+                <details>
+                    <summary>Access to GitHub Codespace</summary>
+                    <p>Blazing fast cloud developer environments with flexible compute and pre-configured containers,
+                        developers can code, collaborate, and debug from any browser. Pay only for what you use with
+                        compute fees starting at $0.18/hr and storage fees at $0.07/GB per month.</p>
+                </details>
+
+                <details>
+                    <summary>Repository rules</summary>
+                    <p>Enforce restrictions on how code branches and tags are merged across your organization, including
+                        requiring reviews by selected collaborators, or allowing only specific contributors to work on a
+                        particular branch.</p>
+                </details>
+
+                <details>
+                    <summary>Multiple reviewers in pull requests</summary>
+                    <p>Assign multiple users or a team to review a pull request.</p>
+                </details>
+
+                <details>
+                    <summary>Draft pull requests</summary>
+                    <p>Easily discuss and collaborate on pull requests before submitting to formal review.</p>
+                </details>
+
+                <details>
+                    <summary>Code owners</summary>
+                    <p>Automatically request reviews—or require approval—by selected contributors when changes are made
+                        to sections of code that they own.</p>
+                </details>
+
+                <details>
+                    <summary>Requaired reviewers</summary>
+                    <p>
+                        Ensure that pull requests have a specific number of approving reviews before collaborators can
+                        make changes to a protected branch.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Pagea and Wiwkis</summary>
+                    <p>Host documentation and simple websites for your project in a wiki format that contributors can
+                        easily edit either on the web or command line.</p>
+                </details>
+
+                <details>
+                    <summary>Environment deployment branches and secrets</summary>
+                    <p>A job cannot access secrets that are defined in an environment unless it is running on the
+                        specified branch.</p>
+                </details>
+
+                <details>
+                    <summary>3,000 CI/CD minutes/month</summary>
+                </details>
+
+                <details>
+                    <summary>2GB of Package storage</summary>
+                    <p>Host your own software packages or use them as dependencies in other projects. Both private and
+                        public hosting available.</p>
+                </details>
+
+                <details>
+                    <summary>Web-based support</summary>
+                    <p>GitHub Support can help you troubleshoot issues you run into while using GitHub.</p>
+                </details>
+
+                <h4 class="featured">FEATURED ADD-ONS</h4>
+
+                <details>
+                    <summary>GitHub Secret Protection</summary>
+                    <p>Ensure your secrets stay secure. Mitigate risk associated with exposed secrets in your
+                        repositories, while preventing new leaks before they happen with push protection.</p>
+                </details>
+
+                <details>
+                    <summary>GitHub COde Security</summary>
+                    <p>Find and fix vulnerabilities in your code before they reach production. Prioritize your
+                        Dependabot alerts with automated triage rules.</p>
+                </details>
+            </div>
+        </div>
+
+        <div class="card" id="c">
+            <h2>Enterprise</h2>
+            <div class="txt">
+                <p>Security, compliance,
+                    and flexible deployment</p>
+            </div>
+            <button class="btn">Starting at</button>
+            <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">21</span>
+                <div class="price-info">
+                    <span class="period">per user/month</span>
+                    <span class="usd">USD</span>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="start-btn">Start a free trial</button>
+                <button class="contact-btn">Contact Sales</button>
+            </div>
+
+            <div class="accordion">
+                <h4 class="everything">← Everything included in Free, plus...</h4>
+                <details>
+                    <summary>Data residency</summary>
+                    <p>GitHub Enterprise Cloud offers a multi-tenant enterprise SaaS solution on Microsoft Azure,
+                        allowing you to choose a regional cloud deployment for data residency, so your in-scope data is
+                        stored at rest in a designated location. <a
+                            href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Faccount%2Fenterprises%2Fnew">Start
+                            a free 30 day trial</a> today or <a
+                            href="https://github.com/enterprise/contact/data-residency">contact our sales</a>
+                        team for more information.</p>
+                </details>
+
+                <details>
+                    <summary>Enterprise Managed Users</summary>
+                    <p>Own and control the user accounts of your enterprise members through your identity provider
+                        (IdP).</p>
+                </details>
+
+                <details>
+                    <summary>User provisioning through SCIM</summary>
+                    <p>Automatically invite members to join your organization when you grant access on your IdP. If you
+                        remove a member's access to your GitHub organization on your SAML IdP, the member will be
+                        automatically removed from the GitHub organization.</p>
+                </details>
+
+                <details>
+                    <summary>Enterprise Account to centrally manage multiple organizations</summary>
+                    <p>GitHub Enterprise Cloud includes the option to create an enterprise account, which enables
+                        collaboration between multiple organizations, gives administrators a single point of visibility
+                        and management and brings license cost savings for identical users in multiple organizations.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Environment protection rules</summary>
+                    <p>When a workflow job references an environment, the job won't start until all of the environment's
+                        protection rules pass.</p>
+                </details>
+
+                <details>
+                    <summary>Repository rules</summary>
+                    <p>Enforce branch and tag protections, as well as push rules across your enterprise. Rule insights
+                        allow you to assess impact of rules before and during enforcement.</p>
+                </details>
+
+                <details>
+                    <summary>Audit Log API</summary>
+                    <p>As a GitHub Enterprise Cloud organization administrator, you can now access log events using our
+                        GraphQL API and monitor the activity in your organization.</p>
+                </details>
+
+                <details>
+                    <summary>SOC1, SOC2, type 2 reports annualy</summary>
+                    <p>GitHub offers AICPA System and Organization Controls (SOC) 1 Type 2 and SOC 2 Type 2 reports with
+                        IAASB International Standards on Assurance Engagements, ISAE 3000, and ISAE 3402.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>FedRAMP Tailored Authority to Operate (ATO)</summary>
+                    <p>Government users can host projects on GitHub Enterprise Cloud with the confidence that our
+                        platform meets the low impact software-as-a-service (SaaS) baseline of security standards set by
+                        our U.S. federal government partners.</p>
+                </details>
+
+                <details>
+                    <summary>SAML single sign-on</summary>
+                    <p>Use an identity provider to manage the identities of GitHub users and applications. </p>
+                </details>
+
+                <details>
+                    <summary>Advanced auditing</summary>
+                    <p>Quickly review the actions performed by members of your organization. Keep copies of audit log
+                        data to ensure secure IP and maintain compliance for your organization.</p>
+                </details>
+
+                <details>
+                    <summary>GitHub Connect</summary>
+                    <p>Share features and workflows between your GitHub Enterprise Server instance and GitHub Enterprise
+                        Cloud.</p>
+                </details>
+
+                <details>
+                    <summary>50,000 CI/CD minutes/month</summary>
+                    <p>Use execution minutes with GitHub Actions to automate your software development workflows. Write
+                        tasks and combine them to build, test, and deploy any code project on GitHub.</p>
+                </details>
+
+                <details>
+                    <summary>50GB of Package storage</summary>
+                    <p>Host your own software packages or use them as dependencies in other projects. Both private and
+                        public hosting available.</p>
+                </details>
+
+                <h4 class="featured">EXCLUSIVE ADD-ON</h4>
+                <details>
+                    <summary>Premium support</summary>
+                    <p>With Premium, get a 30-minute SLA on Urgent tickets and 24/7 web and phone support via callback
+                        request. With Premium Plus, get everything in Premium, assigned Customer Reliability Engineer
+                        and more.
+
+                        <a href="https://github.com/enterprise/premium-support">Learn more about Premium Support</a>
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="sheet">
+        <div class="text2">
+            <h1>Additional add-ons</h1>
+        </div>
+
+        <div class="containers">
+            <div class="container">
+                <img class="log" src="https://i.pinimg.com/736x/b2/e4/81/b2e4819cb50a02d1ca7304a81fcb7cb2.jpg">
+                <p class="words">GitHub Copilot</p>
+                <p class="note">Get started for free with up to 2,000 completions and 50 chat requests per month.</p>
+                <p class="click">Compare plans →</p>
+            </div>
+            <div class="container">
+                <img class="log" src="https://cdn.prod.website-files.com/62e0ed4e135a910117f1152e/6419c64d861a3602c72e45d7_Group%20313.svg">
+                <p class="words">GitHub Models</p>
+                <p class="note">Bring industry-leading Al into your workflow, securely, scalably, and with full
+                    developer control.</p>
+                <p class="click">Learn more →</p>
+            </div>
+            <div class="container">
+                <img class="log" src="https://cdn-icons-png.flaticon.com/512/18264/18264768.png">
+                <p class="words">GitHub Advanced Security</p>
+                <p class="note">Gain peace of mind with our security, privacy, and responsible Al policies.</p>
+                <p class="click">Learn more →</p>
+            </div>
+
+            <div class="container">
+                <img class="log" src="https://cdn-icons-png.flaticon.com/512/6328/6328497.png">
+                <p class="words">GitHub Codespaces</p>
+                <p class="note">Starting at $0.18 per hour of compute and $0.07 per GB of storage.
+                </p>
+                <p class="click">Learn more →</p>
+            </div>
+            <div class="container">
+                <img class="log" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdd0qG-TNyqLvQcGFIbM9yxqtBZK3bvs8zH81EvyxOTFXd9r1k">
+                <p class="words">Premium support</p>
+                <p class="note">Get expert help for Enterprise Cloud and Enterprise-any hour your team needs it.</p>
+                <p class="click">Learn more →</p>
+            </div>
+            <div class="container">
+                <img class="log" src="https://img.icons8.com/pulsar-color/1200/product.jpg">
+                <p class="words">Large File Storage</p>
+                <p class="note">$5 per month for 50 GB bandwidth and 50 GB of storage.</p>
+                <p class="click">Learn more →</p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

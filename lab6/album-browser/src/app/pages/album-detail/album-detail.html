@@ -1,0 +1,15 @@
+<div *ngIf="!loading && album" class="card">
+  <h2>Album #{{ album.id }}</h2>
+
+  <div><b>User ID:</b> {{ album.userId }}</div>
+  <div><b>ID:</b> {{ album.id }}</div>
+
+  <label class="label">Title:</label>
+  <input class="input" [(ngModel)]="editedTitle" />
+
+  <div class="row">
+    <button class="btn" (click)="save()">Save</button>
+    <a class="btn ghost" [routerLink]="['/albums', album.id, 'photos']">View Photos</a>
+    <button class="btn ghost" (click)="back()">Back</button>
+  </div>
+</div>

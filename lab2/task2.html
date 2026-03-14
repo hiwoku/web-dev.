@@ -1,0 +1,251 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+<meta charset="utf-8"> 
+<title>Instagram</title> 
+<style> 
+.layout { 
+display:flex; 
+height: 100vh; 
+} 
+.promo { 
+flex:1; 
+padding: 130px; 
+} 
+.auth { 
+flex:1; 
+padding: 20px; 
+margin-top: 50px; 
+margin-left: 30px; 
+margin-right: 30px; 
+} 
+.gradientText{ 
+background: linear-gradient(45deg, #f58529, #dd2a7b, #c63b9e, #ea4cd5); 
+background-clip: text; 
+-webkit-text-fill-color: transparent; 
+} 
+.divider { 
+width: 2px; 
+background: rgb(208, 206, 206) 
+} 
+.instagramLogo { 
+width: 80px; 
+border-radius: 20px; 
+margin-left: -80px; 
+margin-top: -200px; 
+background-color: white; 
+} 
+.auth h4 { 
+font-family:sans-serif; 
+} 
+.auth input { 
+width: 100%; 
+font-size: 15px; 
+font-family: cursive; 
+padding: 16px; 
+margin-bottom: 15px; 
+border: 1px solid rgb(197, 194, 194); 
+border-radius: 15px; 
+box-sizing: border-box; 
+outline: none; 
+} 
+.auth input .loginBtn { 
+margin: 10px 0; 
+background-color: #3897f0; 
+border: 1px solid #3897f0; 
+border-radius: 4px; 
+font-size: 10px; 
+text-align: center; 
+padding: 5px; 
+} 
+.auth input .btn a{ 
+color: #fff; 
+display: block; 
+} 
+.auth button { 
+width:100%; 
+color:white; 
+font-size:18px; 
+font-weight: 600; 
+margin-bottom: 15px; 
+border:none; 
+border-radius: 30px; 
+padding:10px 0; 
+cursor: pointer; 
+background: rgb(155, 203, 255); 
+} 
+.auth a { 
+color: black; 
+font-size: 16px; 
+font-weight: 400; 
+font-family: math; 
+text-decoration: none; 
+display: block; 
+text-align: center; 
+width:100%; 
+margin-bottom: 50px; 
+border:none; 
+border-radius: 30px; 
+padding:13px 0; 
+cursor: pointer; 
+background: white; 
+} 
+.auth a:hover { 
+background-color: rgb(212, 210, 210); 
+} 
+.promo .promoTitle { 
+font-size: 35px; 
+text-align: center; 
+} 
+.promo .promoImage { 
+margin-left:50px; 
+margin-bottom:20px; 
+padding-bottom: 40px; 
+} 
+.auth .facebookBtn { 
+width:100%; 
+color:black; 
+font-size:15px; 
+font-weight: 200; 
+margin-bottom: 20px; 
+border:1px solid rgb(197, 194, 194); 
+border-radius: 30px; 
+padding:13px 0; 
+cursor: pointer; 
+background: white; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+gap: 10px; 
+} 
+.fb-icon { 
+width: 15px; 
+height: 15px; 
+} 
+.auth .facebookBtn:hover { 
+background: rgb(231, 229, 229); 
+} 
+.auth .signupBtn { 
+width:100%; 
+color:blue; 
+font-size:15px; 
+font-weight: 200; 
+margin-bottom: 20px; 
+border:1px solid blue; 
+border-radius: 30px; 
+padding:13px 0; 
+cursor: pointer; 
+background: white; 
+} 
+.auth .signupBtn:hover { 
+background: rgb(231, 229, 229); 
+} 
+.auth .metaLogo { 
+width:30%; 
+margin-left: 300px; 
+margin-top: -20px; 
+} 
+.promo h1 { 
+font-weight: 40; 
+margin-top: -10px; 
+} 
+.links { 
+margin-top: 0px; 
+} 
+.links a { 
+text-decoration: none; 
+color: #737373; 
+margin-right: 20px; 
+} 
+.links a:hover { 
+text-decoration: underline; 
+} 
+.lang { 
+display: flex; 
+align-items: center; 
+gap: 10px; 
+color: #737373; 
+font-size: 12px; 
+} 
+.lang-select { 
+border: none; 
+background: transparent; 
+color: #737373; 
+cursor: pointer; 
+font-size: 12px; 
+} 
+</style> 
+</head> 
+
+<body> 
+<div class="layout"> 
+<div class="promo"> 
+<img class="instagramLogo" src="https://img.freepik.com/premium-vector/instagram-social-media-brand-logo-icon-set_628407-1996.jpg?semt=ais_hybrid&w=740&q=80"> 
+<h1 class="promoTitle">Посмотрите, какими моментами из жизни поделились ваши <span class="gradientText">близкие друзья</span></h1> 
+<div><img class="promoImage" src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/nWfBjz-5_uf.png" width="450"></div> 
+</div> 
+<div class="divider"></div> 
+<div class="auth"> 
+<h4>Войти в Instagram</h4> 
+<form action="#"> 
+<input type="text" placeholder="Имя пользователя, номер мобильного телефона или электронный адрес"> 
+<input type="password" placeholder="Пароль"> 
+<button class="loginBtn" type="button">Войти</button> 
+<a href="https://www.instagram.com/accounts/password/reset/">Забыли пароль?</a> 
+<button class="facebookBtn" onclick="window.location.href='https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATmoQ74KzTLy7OrQ_mzfVbTbOZHAEfNVORYgc1bgCuhSgFS4hLzhTflfI9C7-By9MBnoh7i3RBLj7VNPq3z5J-k2dkDnvUaAlazn18hP22xuw_XY8KZdNTHLGg6Xh5YibEdQP_QCUpo69_el9z1qu1MctxbAQXYz-3kRTZvTsFdMgEfshzLCq5uyoPIg6HMV9x-nCJdqzxpB4NZeiC-JpzA8RHQRlCG6GSsXAA45fPqMPmkHnklDqJHXyPQKWStZ7rjJPo6peimSKVHdRGboFIuNKg'" type="button"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png" class="fb-icon">Войти через Facebook</button> 
+<button class="signupBtn" onclick="window.location.href='https://www.instagram.com/accounts/emailsignup/?next='" type="button">Создать новый аккаунт</button> 
+<img class="metaLogo" src="https://cdn.bcs-express.ru/article-head/12289.jpg"> 
+</form> 
+</div> 
+</div> 
+<footer> 
+<div class="links"> 
+<a href="https://www.meta.com/about/?utm_source=about.meta.com&utm_medium=redirect">Meta</a> 
+<a href="https://about.instagram.com/">Информация</a> 
+<a href="https://about.instagram.com/blog/">Блог</a> 
+<a href="https://about.instagram.com/about-us/careers">Вакансии</a> 
+<a href="https://help.instagram.com/">Помощь</a> 
+<a href="https://developers.facebook.com/docs/instagram-platform">API</a> 
+<a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Конфиденциальность</a> 
+<a href="https://help.instagram.com/581066165581870/">Условия</a> 
+<a href="https://www.instagram.com/explore/locations/">Места</a> 
+<a href="https://www.instagram.com/web/lite/">Instagram Lite</a> 
+<a href="https://www.meta.ai/?utm_source=foa_web_footer">Meta AI</a> 
+<a href="https://www.threads.com/">Threads</a> 
+<a href="#">Загрузка контактов и лица, не являющиеся пользователями</a> 
+<a href="https://about.instagram.com/">Meta Verified</a> 
+</div> 
+<div class="lang"> 
+<select class="lang-select"> 
+<option>English</option> 
+<option>Русский</option> 
+<option>Қазақша</option> 
+<option>Español</option> 
+<option>Français</option> 
+<option>Africa</option> 
+<option>Українська</option> 
+<option>Türkçe</option> 
+<option>Deutsch</option> 
+<option>Français</option> 
+<option>Italiano</option> 
+<option>فارسی</option> 
+<option>Bahasa Indonesia</option> 
+<option>Bahasa Melayu</option> 
+<option>Filipino</option> 
+<option>한국어</option> 
+<option>日本語</option> 
+<option>中文(简体)</option> 
+<option>中文(繁體)</option> 
+<option>Hrvatski</option> 
+<option>Srpski</option> 
+<option>Български</option> 
+<option>Ελληνικά</option> 
+<option>Suomi</option> 
+<option>Svenska</option> 
+</select> 
+<p class="small">© 2026 Instagram from Meta</p> 
+</div> 
+</footer> 
+</body> 
+</html>

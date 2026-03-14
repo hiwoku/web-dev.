@@ -1,0 +1,28 @@
+.title {
+  margin: 16px 0;
+  font-size: 28px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.cat-btn {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cat-btn.active {
+  border-color: #111;
+  font-weight: 700;
+}
+
+.hint {
+  opacity: 0.8;
+}

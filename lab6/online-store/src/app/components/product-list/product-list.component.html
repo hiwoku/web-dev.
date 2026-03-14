@@ -1,0 +1,9 @@
+@if (localProducts.length === 0) {
+  <p class="empty">No products in this category</p>
+} @else {
+  <div class="grid">
+    @for (p of localProducts; track p.id) {
+      <app-product-card [product]="p" (removed)="removeProduct($event)"></app-product-card>
+    }
+  </div>
+}

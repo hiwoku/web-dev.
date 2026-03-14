@@ -1,0 +1,43 @@
+<div class="card">
+  <img class="img" [src]="currentImage" [alt]="product.name" />
+
+  <div class="content">
+    <h3 class="name">{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+
+    <div class="meta">
+      <span class="price">{{ product.price }} KZT</span>
+      <span class="rating">⭐ {{ product.rating }}</span>
+      <span class="likes">❤ {{ product.likes }}</span>
+    </div>
+
+    @if (product.images.length > 0) {
+      <div class="thumbs">
+        @for (img of product.images; track img) {
+          <img
+            class="thumb"
+            [class.active]="img === currentImage"
+            [src]="img"
+            alt="thumb"
+            (click)="selectImage(img)"
+          />
+        }
+      </div>
+    }
+
+    <div class="actions">
+      <a class="link" [href]="product.link" target="_blank">Open on Kaspi</a>
+
+      <button
+  type="button"
+  [class.active-like]="product.likes === 1"
+  (click)="like()">
+
+  {{ product.likes === 1 ? 'Unlike' : 'Like' }}
+</button>
+      <button type="button" (click)="shareWhatsapp()">WhatsApp</button>
+      <button type="button" (click)="shareTelegram()">Telegram</button>
+      <button type="button" class="danger" (click)="onRemove()">Delete</button>
+    </div>
+  </div>
+</div>

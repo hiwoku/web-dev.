@@ -1,0 +1,8 @@
+.card {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--card), transparent);
+}
+
+p { margin: 8px 0; }
